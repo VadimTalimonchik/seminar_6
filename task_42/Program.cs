@@ -19,3 +19,18 @@ void Number (int num)
 Console.Write("Введите число: ");
 int n = int.Parse(Console.ReadLine()!);
 Number(n);
+
+// // Вариант 2
+
+// string Number (int num)
+// {
+//     string count = "";
+//     while (num >= 1)
+//     {
+//         count = num % 2 + count;
+//         num = num / 2;
+//     }
+//     return count;
+// }
+
+// Console.WriteLine(Number(45));
