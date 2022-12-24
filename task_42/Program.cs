@@ -5,4 +5,17 @@
 // 3  -> 11
 // 2  -> 10
 
-Console.WriteLine("Hello, World!");
+void Number (int num)
+{
+    string count = "";
+    while (num >= 1)
+    {
+        count = num % 2 + count;
+        num = num / 2;
+    }
+    Console.WriteLine($"Двоичное представление введённого десятичного числа будет равно {count}");
+}
+
+Console.Write("Введите число: ");
+int n = int.Parse(Console.ReadLine()!);
+Number(n);
